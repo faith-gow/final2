@@ -1,0 +1,75 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 400px; /* Adjusted for mobile screen size */
+    padding: 16px; /* Reduced padding for smaller screens */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduced font size for smaller screens */
+    margin-bottom: 16px; /* Adjusted margin */
+  }
+
+  select, button {
+    margin: 8px 0;
+    padding: 8px; /* Reduced padding for smaller screens */
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px; /* Reduced font size */
+  }
+
+  .word, .definition {
+    margin: 16px 0;
+    font-size: 1.2rem; /* Reduced font size */
+    font-weight: bold;
+  }
+
+  .error {
+    color: red;
+    font-size: 0.8rem; /* Reduced font size */
+  }
+
+  @media (min-width: 768px) {
+    body {
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 600px; /* Increased width for larger screens */
+    }
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    select, button {
+      padding: 12px; /* Increased padding for larger screens */
+      font-size: 16px; /* Larger font size */
+    }
+
+    .word, .definition {
+      font-size: 1.8rem;
+    }
+  }
