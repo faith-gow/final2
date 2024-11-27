@@ -2,13 +2,14 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import OpenAI from "openai";
+import { AIopen } from './Secrets.js';
 
 const app = express();
 const PORT = 5000;
 
 // Initialize OpenAI
 const openai = new OpenAI({
-  apiKey: "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", // Replace with your actual OpenAI key
+  apiKey: AIopen.key,
 });
 
 // Middleware
